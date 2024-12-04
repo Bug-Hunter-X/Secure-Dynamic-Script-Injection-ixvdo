@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Correct way to add a new script tag using DOM manipulation
+    var newScript = document.createElement('script');
+    newScript.textContent = 'alert("This alert is safe.");'; //or fetch from external source if needed
+    document.getElementById('myDiv').appendChild(newScript);
+  </script>
+</body>
+</html>
